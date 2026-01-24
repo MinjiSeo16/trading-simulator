@@ -1,10 +1,10 @@
-package com.minjiseo.stockcompare;
+package com.minjiseo.tradingsimulator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StockcompareApplicationTests {
+class TradingSimulatorApplicationTests {
 
 	@Test
 	void contextLoads() {

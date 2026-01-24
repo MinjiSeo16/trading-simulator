@@ -1,13 +1,13 @@
-package com.minjiseo.stockcompare;
+package com.minjiseo.tradingsimulator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StockcompareApplication {
+public class TradingSimulatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StockcompareApplication.class, args);
+		SpringApplication.run(TradingSimulatorApplication.class, args);
 	}
 
 }
