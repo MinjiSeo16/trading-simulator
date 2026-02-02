@@ -1,5 +1,6 @@
 package com.minjiseo.tradingsimulator.domain.user.entity;
 
+import com.minjiseo.tradingsimulator.domain.wallet.entity.Wallet;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -25,6 +26,9 @@ public class User {
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
+
+    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY)
+    private Wallet wallet;
 
     private User(String email, String password) {
         this.email = email;
